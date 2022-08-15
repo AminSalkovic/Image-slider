@@ -1,0 +1,48 @@
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.image{
+  width: 800px;
+  height: 500px;
+ }
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  color: black;
+  font-size: 3rem;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  color: black;
+  font-size: 3rem;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.slide{
+  opacity:0;
+  transition-duration:1s ease ;
+}
+.slide-active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+
+}
